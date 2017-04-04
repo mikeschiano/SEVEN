@@ -1,6 +1,5 @@
 angular.module('app', [
-    'ui.router',
-    'ngMaterial'
+    'ui.router'
 ])
 
 .constant('API', {
@@ -20,6 +19,12 @@ angular.module('app', [
             templateUrl: 'app/components/home/index.html',
             controller: 'HomeController',
             controllerAs: 'home',
+        })
+        .state('slug', {
+            url: '/:slug',
+            templateUrl: function(stateParams) {
+                console.log(stateParams.slug);
+            }
         })
         .state('404', {
             url: '/404',
@@ -57,6 +62,7 @@ angular.module('app', [
 .run(function($rootScope, $location, $document, $state, $http, $q, API) {
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+
         $rootScope.page = toState.url.substr(toState.url.indexOf('/') + 1);
         $rootScope.siteTitle = 'SEVEN';
         $rootScope.tagLine = 'Test';

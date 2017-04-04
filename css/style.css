@@ -6622,7 +6622,8 @@ textarea {
   resize: vertical;
   vertical-align: top; }
 
-form, fieldset {
+form,
+fieldset {
   margin: 0;
   padding: 0;
   border-style: none; }
@@ -6668,7 +6669,14 @@ table {
 p {
   margin: 0 0 1.2em; }
 
-input [type="email"], input [type="tel"], input[type="search"], input[type="text"], input[type="password"], input[type="file"], input[type="submit"], textarea {
+input [type="email"],
+input [type="tel"],
+input[type="search"],
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="submit"],
+textarea {
   -webkit-appearance: none; }
 
 input:focus,
@@ -6834,14 +6842,17 @@ button:focus {
   margin: 0 auto -275px;
   /* the bottom margin is the negative value of the footer's height */ }
 
-.footer, .push {
+.footer,
+.push {
   height: 275px;
   /* .push must be the same height as .footer */ }
 
 .footer {
   background: #2a3645;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: absolute;
+  bottom: 0; }
 
 .footer .col {
   float: left;
@@ -6856,7 +6867,8 @@ button:focus {
   color: #a1a1a1;
   margin: 0 0 13px; }
 
-.footer #footer-links-sm, .footer #footer-links-popular {
+.footer #footer-links-sm,
+.footer #footer-links-popular {
   min-height: 135px; }
 
 .footer .col ul {
@@ -7038,7 +7050,8 @@ button:focus {
     line-height: 20px; }
   .footer .container {
     padding: 20px; }
-  .footer, .push {
+  .footer,
+  .push {
     height: auto; }
   .footer .col ul {
     width: 100%;
