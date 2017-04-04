@@ -1,0 +1,100 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../fonts/roboto-regular-webfont.eot');
+	src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/roboto-regular-webfont.woff') format('woff'),
+		url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+		url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'robotobold';
+	src: url('../fonts/roboto-bold-webfont.eot');
+	src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/roboto-bold-webfont.woff') format('woff'),
+		url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+		url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?j79gtp');
+	src:url('../fonts/icomoon.eot?#iefixj79gtp') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?j79gtp') format('woff'),
+		url('../fonts/icomoon.ttf?j79gtp') format('truetype'),
+		url('../fonts/icomoon.svg?j79gtp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* icons styles */
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-align-left:before {
+	content: "\e60a";
+}
+.icon-tag:before {
+	content: "\e601";
+}
+.icon-list:before {
+	content: "\e600";
+}
+.icon-mobile:before {
+	content: "\e603";
+}
+.icon-mute:before {
+	content: "\e604";
+}
+.icon-followers:before {
+	content: "\e605";
+}
+.icon-comments:before {
+	content: "\e606";
+}
+.icon-artists:before {
+	content: "\e607";
+}
+.icon-add-to:before {
+	content: "\e608";
+}
+.icon-search:before {
+	content: "\e609";
+}
+.icon-playback-pause:before {
+	content: "\f0bb";
+}
+.icon-share:before {
+	content: "\e081";
+}
+.icon-mobile2:before {
+	content: "\e602";
+}
+.icon-play:before {
+	content: "\f04b";
+}
+.icon-forward:before {
+	content: "\f04e";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-facebook2:before {
+	content: "\f09a";
+}
+.icon-google-plus:before {
+	content: "\f0d5";
+}
+.icon-youtube:before {
+	content: "\f167";
+}

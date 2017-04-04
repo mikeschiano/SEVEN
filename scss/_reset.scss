@@ -2,8 +2,24 @@
 
 html {
     color: #222;
-    font-size: 1em;
     line-height: 1.4;
+	height: 100%;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+* {
+	font-size: 100.01%;
+	max-height: 10000px;
+	margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #2d7dc1;
+    outline: none;
 }
 
 ::-moz-selection {
