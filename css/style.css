@@ -7023,6 +7023,49 @@ button:focus {
 #popup-login {
   display: none; }
 
+#contents .banner {
+  max-width: 728px;
+  margin: 0 auto 30px; }
+
+#contents #titling {
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  padding: 18px 22px 16px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04); }
+  #contents #titling .image {
+    float: left;
+    margin: 4px 4px 0 0; }
+    #contents #titling .image .album-art {
+      height: 160px;
+      width: 160px;
+      max-height: 160px;
+      max-width: 160px; }
+  #contents #titling .holder {
+    overflow: hidden;
+    font-size: 0.75em;
+    line-height: 1.5em; }
+    #contents #titling .holder .container {
+      width: 100%;
+      position: relative; }
+      #contents #titling .holder .container .date {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #898989; }
+      #contents #titling .holder .container h1.song-name {
+        color: #141e2a;
+        font: 3.17em/1.2 robotobold, Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        margin: 0px; }
+      #contents #titling .holder .container h2.artist-name {
+        color: #898989;
+        font-size: 1.67em;
+        line-height: 1.2;
+        font-weight: normal;
+        display: block;
+        margin: 0 0 -3px; }
+
 /* Smartphones (portrait and landscape) ----------- */
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- 320 default */
