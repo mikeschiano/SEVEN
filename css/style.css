@@ -7023,6 +7023,12 @@ button:focus {
 #popup-login {
   display: none; }
 
+.highlight {
+  background: #ea8216;
+  color: #fff;
+  font-size: 30%;
+  padding: 2px 4px; }
+
 #contents .banner {
   max-width: 728px;
   margin: 0 auto 30px; }
