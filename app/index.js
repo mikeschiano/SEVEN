@@ -61,6 +61,8 @@ angular.module('app', [
  */
 .run(function($rootScope, $location, $document, $state, $http, $q, API) {
 
+    $rootScope.loggedIn = true;
+
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
 
         $rootScope.page = toState.url.substr(toState.url.indexOf('/') + 1);

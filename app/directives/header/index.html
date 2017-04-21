@@ -24,9 +24,35 @@
             </div>
 
             <div class="nav navbar-nav navbar-right">
-                <div class="profile-holder">
-                <a href="#" class="sign-up" rel="nofollow" title="Sign Up">Sign Up</a>
-                <a href="login" class="log-in popup-link" data-target="#popup-login" rel="nofollow" title-"Log In">Log In</a>
+                <div class="profile-holder" ng-hide="loggedIn">
+                    <a href="#" class="sign-up" rel="nofollow" title="Sign Up">Sign Up</a>
+                    <a href="login" class="log-in popup-link" data-target="#popup-login" rel="nofollow" title-"Log In">Log In</a>
+                </div>
+
+                <div class="profile-holder" ng-show="loggedIn">
+
+                    <div class="profile-info">
+                        <div class="drop-holder">
+                            <span class="username">ckairos</span>
+                            <div class="avatar">
+                                <img src="img/avatar.jpg" alt="image description">
+                            </div>
+                            <div class="drop">
+                                <ul>
+                                    <li><a href="#">Edit Profile</a></li>
+                                    <li><a href="#">Preferences</a></li>
+                                </ul>
+                                <a class="single-link" href="#">Private Messages <span class="num active">(10)</span></a>
+                                <ul>
+                                    <li><a href="#">Journal</a></li>
+                                    <li><a href="#">Favorites</a></li>
+                                </ul>
+                                <a class="single-link" href="#">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="notification active">4</span>
                 </div>
             </div>
         </div><!--/.nav-collapse -->

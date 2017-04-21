@@ -131,85 +131,6 @@ button:focus {
     outline: none;
 }
 
-#header {
-    background: #2a3645 url('../img/header-bg.png');
-    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
-    border: none;
-    min-height: 58px;
-    max-height: 58px;
-    padding-top: 12px;
-}
-
-#header #logo {
-    background: url('../img/songmeanings-logo.png') no-repeat 0px 0px;
-    height: 34px;
-    width: 211px;
-    text-indent: -1000px;
-    display: block;
-}
-
-#header #navigation {
-    position: relative;
-}
-
-#header #navigation .navbar-center {
-    position: absolute;
-    left: 25%;
-}
-
-#header #btn-collapse {
-    margin-top: 0px !important;
-}
-
-#header #navigation .btn-explore {
-    display: inline-block;
-    vertical-align: middle;
-    background: #3b4958;
-    border: 1px solid #1a2431;
-    -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .3);
-    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .3);
-    color: #fff;
-    font-size: 14px;
-    line-height: 31px;
-    height: 34px;
-    width: 88px;
-    padding: 0 10px;
-    text-align: center;
-}
-
-#header #navigation .btn-explore:hover {
-    background-color: #435160 !important;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzNTE2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzQzNTE2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzNiNDk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYjQ5NTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #435160 0%, #435160 20%, #3b4958 67%, #3b4958 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #435160), color-stop(20%, #435160), color-stop(67%, #3b4958), color-stop(100%, #3b4958));
-    background: -webkit-linear-gradient(top, #435160 0%, #435160 20%, #3b4958 67%, #3b4958 100%);
-    background: -o-linear-gradient(top, #435160 0%, #435160 20%, #3b4958 67%, #3b4958 100%);
-    background: -ms-linear-gradient(top, #435160 0%, #435160 20%, #3b4958 67%, #3b4958 100%);
-    background: linear-gradient(to bottom, #435160 0%, #435160 20%, #3b4958 67%, #3b4958 100%);
-    color: #fff;
-}
-
-#header #navigation .btn-explore:active {
-    background-color: #3b4958 !important;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiNDk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iIzNiNDk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzQzNTE2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MzUxNjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #3b4958 0%, #3b4958 33%, #435160 80%, #435160 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b4958), color-stop(33%, #3b4958), color-stop(80%, #435160), color-stop(100%, #435160));
-    background: -webkit-linear-gradient(top, #3b4958 0%, #3b4958 33%, #435160 80%, #435160 100%);
-    background: -o-linear-gradient(top, #3b4958 0%, #3b4958 33%, #435160 80%, #435160 100%);
-    background: -ms-linear-gradient(top, #3b4958 0%, #3b4958 33%, #435160 80%, #435160 100%);
-    background: linear-gradient(to bottom, #3b4958 0%, #3b4958 33%, #435160 80%, #435160 100%);
-}
-
-#header .or {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px 0 8px;
-    font-size: 12px;
-    line-height: 1.2;
-    color: #465564;
-}
-
 .sign-up {
     background: #2d7dc1;
     color: #fff;
@@ -533,59 +454,11 @@ button:focus {
     padding: 2px 4px;
 }
 
-#contents {
-    .banner {
-        max-width: 728px;
-        margin: 0 auto 30px;
-    }
-    #titling {
-        border: 1px solid #e6e6e6;
-        overflow: hidden;
-        padding: 18px 22px 16px;
-        -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .04);
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .04);
-        .image {
-            float: left;
-            margin: 4px 4px 0 0;
-            .album-art {
-                height: 160px;
-                width: 160px;
-                max-height: 160px;
-                max-width: 160px;
-            }
-        }
-        .holder {
-            overflow: hidden;
-            font-size: 0.75em;
-            line-height: 1.5em;
-            .container {
-                width: 100%;
-                position: relative;
-                .date {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    color: #898989;
-                }
-                h1.song-name {
-                    color: #141e2a;
-                    font: 3.17em/1.2 robotobold, Arial, Helvetica, sans-serif;
-                    font-weight: normal;
-                    margin: 0px;
-                }
-                h2.artist-name {
-                    color: #898989;
-                    font-size: 1.67em;
-                    line-height: 1.2;
-                    font-weight: normal;
-                    display: block;
-                    margin: 0 0 -3px;
-                }
-            }
-        }
-    }
-}
 
+
+
+@import 'header';
+@import 'main';
 
 /* Smartphones (portrait and landscape) ----------- */
 

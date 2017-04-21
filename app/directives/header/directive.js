@@ -1,5 +1,5 @@
 angular.module('app')
-.directive('header', function(){
+.directive('smHeader', function(){
     return {
         restrict: 'A',
         replace: true,

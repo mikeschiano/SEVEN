@@ -1,8 +1,139 @@
-$bg_header: #2a3645;
-#page {
-    header {
-        background-color: $bg_header;
-        width: 100%;
-        display: block;
-    }
+//colors
+$color_tuna_approx: #2a3645;
+$black_50: rgba(0, 0, 0, .5);
+$color_oxford_blue_approx: #3b4958;
+$color_shark_approx: #1a2431;
+$white_30: rgba(255, 255, 255, .3);
+$white: #fff;
+$color_river_bed_approx: #435160;
+$color_fiord_approx: #465564;
+
+//urls
+$url_0: url(../img/header-bg.png);
+$url_1: url(../img/songmeanings-logo.png);
+$url_2: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzNTE2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzQzNTE2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzNiNDk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYjQ5NTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+$url_3: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiNDk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iIzNiNDk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzQzNTE2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MzUxNjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+#header {
+	background: $color_tuna_approx $url_0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 5px 0 $black_50;
+	border: none;
+	min-height: 58px;
+	max-height: 58px;
+	padding-top: 12px;
+	#logo {
+		background: $url_1 no-repeat 0 0;
+		height: 34px;
+		width: 211px;
+		text-indent: -1000px;
+		display: block;
+	}
+	#navigation {
+		position: relative;
+		.navbar-center {
+			position: absolute;
+			left: 25%;
+		}
+		.btn-explore {
+			display: inline-block;
+			vertical-align: middle;
+			background: $color_oxford_blue_approx;
+			border: 1px solid $color_shark_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: inset 0 1px 0 0 $white_30;
+			color: $white;
+			font-size: 14px;
+			line-height: 31px;
+			height: 34px;
+			width: 88px;
+			padding: 0 10px;
+			text-align: center;
+			&:hover {
+				background-color: $color_river_bed_approx !important;
+				background: $url_2;
+				background: linear-gradient(to bottom, $color_river_bed_approx 0, $color_river_bed_approx 20%, $color_oxford_blue_approx 67%, $color_oxford_blue_approx 100%);
+				color: $white;
+			}
+			&:active {
+				background-color: $color_oxford_blue_approx !important;
+				background: $url_3;
+				background: linear-gradient(to bottom, $color_oxford_blue_approx 0, $color_oxford_blue_approx 33%, $color_river_bed_approx 80%, $color_river_bed_approx 100%);
+			}
+		}
+
+        .profile-holder {
+            .notification {
+                float: right;
+                position: relative;
+                background: url(../img/icon-note.png) no-repeat 0 50%;
+                padding: 8px 26px 8px 23px;
+                color: #465564;
+                font: 14px Arial, Helvetica, sans-serif;
+                display: none;
+
+                &.active {
+                    background: url(../img/icon-note-active.png) no-repeat 0 50%;
+                    color: #f87d00;
+                    display: block;
+                }
+                &:after {
+                    content: '';
+                    height: 32px;
+                    background: #141e2a;
+                    width: 1px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+			.profile-info {
+				display: block;
+				position: relative;
+				float: right;
+				text-align: left;
+				padding: 0 0 13px;
+				margin: 0 0 0 15px;
+				cursor: pointer;
+				&:hover {
+					.username {
+						color: rgba(255, 255, 255, .3);
+					}
+				}
+				.username {
+					float: left;
+					font: 14px/1.2 robotobold, Arial, Helvetica, sans-serif;
+					text-transform: lowercase;
+					color: #fff;
+					margin: 8px 18px 0 0;
+				}
+				.avatar {
+					float: left;
+					width: 34px;
+				}
+
+				.drop {
+					display: none;
+				}
+
+				@media only screen and (max-width: 1140px) {
+					.profile-info {
+						margin: 0 0 0 0px;
+					}
+				}
+			}
+        }
+	}
+	#btn-collapse {
+		margin-top: 0 !important;
+	}
+	.or {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px 0 8px;
+		font-size: 12px;
+		line-height: 1.2;
+		color: $color_fiord_approx;
+	}
 }
