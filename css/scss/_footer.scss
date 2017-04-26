@@ -1,0 +1,5 @@
+@include media(">phone", "<=tablet") {
+    height: 260px;
+    max-height: 260px;
+    background: #BEBEBE;
+}

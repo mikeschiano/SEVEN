@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'fonts';
 @import 'bootstrap';
+@import 'include-media';
 
 /*
  * set default text color
@@ -453,9 +454,6 @@ button:focus {
     font-size: 30%;
     padding: 2px 4px;
 }
-
-
-
 
 @import 'header';
 @import 'main';
