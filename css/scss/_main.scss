@@ -5,6 +5,12 @@
                 max-width: 728px;
                 margin: 0 auto 30px;
             }
+
+            @media only screen and (max-width: 400px) {
+                .banner {
+                    display: none;
+                }
+            }
             #titling {
                 border: 1px solid #e6e6e6;
                 overflow: hidden;
@@ -54,6 +60,7 @@
                     border-top: 1px solid #e6e6e6;
                     padding: 15px 0 0;
                     margin: 15px;
+                    width: 100%;
 
                     .info-links {
                         padding: 1px 0 0 1px;

@@ -6779,113 +6779,6 @@ button:focus {
   height: 275px;
   /* .push must be the same height as .footer */ }
 
-.footer {
-  background: #2a3645;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0; }
-
-.footer .col {
-  float: left;
-  border-right: 1px solid #384655;
-  padding: 0 29px 0 0; }
-
-.footer .col + .col {
-  margin: 0 0 0 34px; }
-
-.footer .col h3 {
-  font: 1.13em/1.2 robotobold, Arial, Helvetica, sans-serif;
-  color: #a1a1a1;
-  margin: 0 0 13px; }
-
-.footer #footer-links-sm,
-.footer #footer-links-popular {
-  min-height: 135px; }
-
-.footer .col ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0.75em;
-  line-height: 1.2;
-  float: left;
-  width: 110px; }
-
-.footer .col ul li {
-  margin: 0 0 9px; }
-
-.footer .col ul a {
-  color: #2d7dc1; }
-
-.footer .info-block {
-  float: right;
-  width: 54.74%;
-  padding: 0 0 0 15px;
-  margin: -7px 0 0; }
-
-.footer .info-block h3 {
-  color: #465564;
-  font: 26px/1.2 robotobold, Arial, Helvetica, sans-serif;
-  border-bottom: 1px solid #384655;
-  word-spacing: -1px;
-  padding: 0 0 20px;
-  margin: 0 0 30px; }
-
-.footer .info-block ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: 0.88em;
-  line-height: 1.2;
-  color: #ea8216;
-  text-align: justify;
-  width: 100%; }
-
-.footer .info-block ul:after {
-  display: inline-block;
-  width: 100%;
-  content: '';
-  height: 0;
-  font-size: 0;
-  line-height: 0; }
-
-.footer .info-block ul li .holder {
-  float: left;
-  text-align: right; }
-
-.footer .info-block ul li {
-  display: inline-block;
-  vertical-align: top; }
-
-.footer .info-block .num {
-  color: #fff;
-  font: 1.71em/1.2 robotobold, Arial, Helvetica, sans-serif;
-  display: block; }
-
-.footer .info-block .num .icon:before {
-  color: #ea8216;
-  font-size: 19px;
-  margin: 0 11px 0 0; }
-
-.footer .footer-row {
-  background: #141e2a;
-  color: #a1a1a1;
-  font-size: 0.75em;
-  line-height: 1.25em;
-  margin: 0 auto;
-  width: 100%;
-  display: block; }
-
-.footer .footer-row .container {
-  padding-top: 22px;
-  padding-bottom: 18px; }
-
-.footer .container {
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 26px 82px 11px; }
-
 .social-networks {
   float: right;
   padding: 0;
@@ -6975,7 +6868,8 @@ button:focus {
     text-indent: -1000px;
     display: block; }
   #header #navigation {
-    position: relative; }
+    position: relative;
+    width: 100%; }
     #header #navigation .navbar-center {
       position: absolute;
       left: 25%; }
@@ -7059,6 +6953,10 @@ button:focus {
   max-width: 728px;
   margin: 0 auto 30px; }
 
+@media only screen and (max-width: 400px) {
+  #page main #contents .banner {
+    display: none; } }
+
 #page main #contents #titling {
   border: 1px solid #e6e6e6;
   overflow: hidden;
@@ -7100,7 +6998,8 @@ button:focus {
   #page main #contents #titling .row {
     border-top: 1px solid #e6e6e6;
     padding: 15px 0 0;
-    margin: 15px; }
+    margin: 15px;
+    width: 100%; }
     #page main #contents #titling .row .info-links {
       padding: 1px 0 0 1px;
       margin: 0;
@@ -7131,6 +7030,102 @@ button:focus {
           vertical-align: middle; }
         #page main #contents #titling .row .info-links li .icon {
           margin: 0 8px 0 0; }
+
+#footer {
+  background: #2a3645;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0; }
+  #footer .col {
+    float: left;
+    border-right: 1px solid #384655;
+    padding: 0 29px 0 0; }
+    #footer .col h3 {
+      font: 1.13em/1.2 robotobold, Arial, Helvetica, sans-serif;
+      color: #a1a1a1;
+      margin: 0 0 13px; }
+    #footer .col + .col {
+      margin: 0 0 0 34px; }
+    #footer .col ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.75em;
+      line-height: 1.2;
+      float: left;
+      width: 110px; }
+      #footer .col ul li {
+        margin: 0 0 9px; }
+        #footer .col ul li a {
+          color: #2d7dc1; }
+          #footer .col ul li a:hover {
+            color: #fff; }
+  #footer .container {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 26px 82px 11px; }
+  #footer .info-block {
+    float: right;
+    width: 54.74%;
+    padding: 0 0 0 15px;
+    margin: -7px 0 0; }
+    #footer .info-block h3 {
+      color: #465564;
+      font: 26px/1.2 robotobold, Arial, Helvetica, sans-serif;
+      border-bottom: 1px solid #384655;
+      word-spacing: -1px;
+      padding: 0 0 20px;
+      margin: 0 0 30px; }
+    #footer .info-block ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 0.88em;
+      line-height: 1.2;
+      color: #ea8216;
+      text-align: justify;
+      width: 100%; }
+      #footer .info-block ul:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+        height: 0;
+        font-size: 0;
+        line-height: 0; }
+      #footer .info-block ul li {
+        display: inline-block;
+        vertical-align: top; }
+        #footer .info-block ul li .holder {
+          float: left;
+          text-align: right; }
+
+.footer #footer-links-sm,
+.footer #footer-links-popular {
+  min-height: 135px; }
+
+.footer .info-block .num {
+  color: #fff;
+  font: 1.71em/1.2 robotobold, Arial, Helvetica, sans-serif;
+  display: block; }
+
+.footer .info-block .num .icon:before {
+  color: #ea8216;
+  font-size: 19px;
+  margin: 0 11px 0 0; }
+
+.footer .footer-row {
+  background: #141e2a;
+  color: #a1a1a1;
+  font-size: 0.75em;
+  line-height: 1.25em;
+  margin: 0 auto;
+  width: 100%;
+  display: block; }
+
+.footer .footer-row .container {
+  padding-top: 22px;
+  padding-bottom: 18px; }
 
 /* Smartphones (portrait and landscape) ----------- */
 /* Smartphones (landscape) ----------- */
