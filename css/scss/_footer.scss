@@ -1,3 +1,4 @@
+
 #footer {
     background: #2a3645;
     width: 100%;
@@ -128,4 +129,10 @@
 .footer .footer-row .container {
     padding-top: 22px;
     padding-bottom: 18px;
+}
+
+@include media(">phone", "<=tablet") {
+    height: 260px;
+    max-height: 260px;
+    background: #BEBEBE;
 }
